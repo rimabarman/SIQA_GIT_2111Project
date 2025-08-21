@@ -7,6 +7,15 @@ packages:
   gitUrl: https://github.com/rimabarman
   gitUsername: rimabarman
   gitBranch: main
+services:
+- serviceName: project.siqa_git_2111.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.operations.actions:DBInsertNew
+  packages:
+  - name: SIQA_GIT_2111Project
+    version: "1.0"
+- serviceName: project.siqa_git_2111.integrations:SIQAAdapterFlow
+  packages:
+  - name: SIQA_GIT_2111Project
+    version: "1.0"
 configurationVariables:
   jdbc.SAP TxStore Pool.maxConns: "10"
   jdbcfunc.SAPTxStore.failFastMode: false
